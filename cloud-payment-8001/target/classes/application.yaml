@@ -1,0 +1,21 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: cloud-payment-service
+  datasource:
+    #  type: com.alibaba.druid.pool.DruidDataSource
+    #数据源连接配置
+    url: jdbc:mysql://localhost:3306/chenpc?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  devtools:
+    restart:
+      poll-interval: 3000ms
+      quiet-period: 2999ms
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true  #默认就是true 开启驼峰命名
+#  mapper-locations: classpath:mapper/*.xml
+#  type-aliases-package: com.chen.cloud.entities
