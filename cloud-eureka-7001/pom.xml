@@ -9,18 +9,25 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud-order-80</artifactId>
+    <artifactId>cloud-eureka-7001</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
     <dependencies>
+<!--        引入eureka-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+        </dependency>
+<!--        自己编写的common包-->
         <dependency>
             <groupId>com.chen.springcloud</groupId>
             <artifactId>cloud-commons</artifactId>
             <version>${project.version}</version>
         </dependency>
+<!--        springboot web 配置-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -29,7 +36,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
-
+<!--        通用配置-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>
@@ -51,4 +58,5 @@
             <artifactId>junit</artifactId>
         </dependency>
     </dependencies>
+
 </project>
