@@ -3,9 +3,7 @@ package com.chen.cloud.controller;
 import com.chen.cloud.entities.CommonResult;
 import com.chen.cloud.entities.Payment;
 import com.chen.cloud.service.PaymentService;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 /**
