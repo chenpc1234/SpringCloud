@@ -10,6 +10,8 @@
     <modules>
         <module>cloud-payment-8001</module>
         <module>cloud-payment-8002</module>
+        <module>cloud-payment-8004</module>
+
         <module>cloud-order-80</module>
         <module>cloud-commons</module>
         <module>cloud-eureka-7001</module>
