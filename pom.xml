@@ -9,9 +9,11 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>cloud-payment-8001</module>
+        <module>cloud-payment-8002</module>
         <module>cloud-order-80</module>
         <module>cloud-commons</module>
         <module>cloud-eureka-7001</module>
+        <module>cloud-eureka-7002</module>
     </modules>
     <packaging>pom</packaging>
     <!--统一管理jar包版本-->

@@ -27,9 +27,9 @@ public class PaymentController {
     private CommonResult queryPayment(@PathVariable("id") Long id){
         Payment payment = paymentService.queryPayment(id);
         if (payment!=null){
-            return new CommonResult(200, "success8001", payment);
+            return new CommonResult(200, "success8002", payment);
         }else {
-            return new CommonResult(500, "failed8001");
+            return new CommonResult(500, "failed8002");
         }
     }
 }
