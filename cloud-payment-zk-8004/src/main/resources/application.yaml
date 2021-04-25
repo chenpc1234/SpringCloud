@@ -7,3 +7,14 @@ spring:
   cloud:
     zookeeper:
       connect-string: 192.168.8.205:2181,192.168.8.206:2181,192.168.8.207:2181
+  datasource:
+    #  type: com.alibaba.druid.pool.DruidDataSource
+    #数据源连接配置
+    url: jdbc:mysql://localhost:3306/chenpc?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  devtools:
+      restart:
+        poll-interval: 3000ms
+        quiet-period: 2999ms

@@ -1,6 +1,5 @@
 package com.chen.cloud;
 
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -8,13 +7,12 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 /**
  * @author chenpc
  * @version 1.0
- * @since 2021/4/19/04/19  15:05
+ * @since 2021/4/20/04/20  14:51
  */
 @SpringBootApplication
 @EnableDiscoveryClient
-@MapperScan("com.chen.cloud.dao")
-public class PaymentMain8004 {
+public class OrderZkMain81 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8004.class, args);
+        SpringApplication.run(OrderZkMain81.class,args);
     }
 }
