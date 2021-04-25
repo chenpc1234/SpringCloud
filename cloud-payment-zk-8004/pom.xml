@@ -17,6 +17,8 @@
     </properties>
 
     <dependencies>
+
+<!--        引入zookeeper的依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-zookeeper-discovery</artifactId>
@@ -46,7 +48,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        <!--自己写的common包-->
+<!--        自己写的common包-->
         <dependency>
             <groupId>com.chen.springcloud</groupId>
             <artifactId>cloud-commons</artifactId>
