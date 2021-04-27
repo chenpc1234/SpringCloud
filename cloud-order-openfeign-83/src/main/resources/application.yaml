@@ -1,0 +1,14 @@
+server:
+  port: 83
+spring:
+  application:
+    name: order-openfeign-83
+eureka:
+  client:
+    register-with-eureka: true   #注册
+    fetch-registry: true   #是否从eureka server 已有的注册信息
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/  #服务端url
+  instance:
+    instance-id: order-openfeign-83
+    prefer-ip-address: true  #显示IP

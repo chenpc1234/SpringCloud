@@ -1,7 +1,7 @@
 package com.chen.cloud.controller;
 
-import com.chen.cloud.entities.CommonResult;
 import com.chen.cloud.entities.Payment;
+import com.chen.cloud.entities.CommonResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;

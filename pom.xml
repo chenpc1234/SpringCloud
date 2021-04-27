@@ -16,6 +16,7 @@
         <module>cloud-order-80</module>
         <module>cloud-order-zk-81</module>
         <module>cloud-order-consul-82</module>
+        <module>cloud-order-openfeign-83</module>
         <module>cloud-commons</module>
         <module>cloud-eureka-7001</module>
         <module>cloud-eureka-7002</module>
