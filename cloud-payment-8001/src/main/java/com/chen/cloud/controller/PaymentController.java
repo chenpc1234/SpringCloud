@@ -25,6 +25,11 @@ public class PaymentController {
 
     @GetMapping("/qryPayment/{id}")
     private CommonResult queryPayment(@PathVariable("id") Long id){
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Payment payment = paymentService.queryPayment(id);
         if (payment!=null){
             return new CommonResult(200, "success8001", payment);
