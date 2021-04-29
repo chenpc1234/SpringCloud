@@ -2,6 +2,8 @@ package com.chen.cloud.service;
 
 import org.springframework.stereotype.Service;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  * @author chenpc
  * @version 1.0
@@ -13,8 +15,12 @@ public class PaymentService {
     public String seeOk(Long integer){
         return "OK"+integer;
     }
-    public String seeOkTimeOut(Long integer) throws InterruptedException {
-        Thread.sleep(3000);
-        return "休息3秒---OK"+integer;
+    public String seeOkTimeOut(Long integer) {
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return "休息5秒---OK"+integer;
     }
 }

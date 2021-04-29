@@ -17,14 +17,14 @@ public class PaymentController {
     @Autowired
     private PaymentService paymentService;
 
-    @GetMapping("/qryPayment/{id}")
-    private CommonResult queryPayment(@PathVariable("id") Long id){
-        paymentService.seeOk(id);
-        return null;
+    @GetMapping("/seeOK/{id}")
+    private CommonResult seeOk(@PathVariable("id") Long id){
+        String s = paymentService.seeOk(id);
+        return new CommonResult(200, "seeOK", s);
     }
-    @GetMapping("/qryPayment/timeout/{id}")
-    private CommonResult queryOutPayment(@PathVariable("id") Long id) throws InterruptedException {
-        paymentService.seeOkTimeOut(id);
-        return null;
+    @GetMapping("/seeOK/timeout/{id}")
+    private CommonResult seeOkTimeOut(@PathVariable("id") Long id){
+        String s = paymentService.seeOkTimeOut(id);
+        return new CommonResult(200, "seeOKTimeOut", s);
     }
 }

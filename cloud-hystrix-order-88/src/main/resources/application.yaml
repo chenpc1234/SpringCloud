@@ -1,0 +1,23 @@
+server:
+  port: 88
+spring:
+  application:
+    name: order-hystrix-88
+eureka:
+  client:
+    register-with-eureka: true   #注册
+    fetch-registry: true   #是否从eureka server 已有的注册信息
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/  #服务端url
+  instance:
+    instance-id: orderhystrix88
+    prefer-ip-address: true  #显示IP
+ribbon:
+  ReadTimeout: 5000   #指的是建立连接所用的时间,适用于网络王正常的情况下两端连接所用的时间
+  ConnectTimeout: 5000  #指的是建立连接后从服务器读取到可用资源所用的时间
+  # MaxAutoRetries: 1 #同一台实例最大重试次数,不包括首次调用
+  #MaxAutoRetriesNextServer: 1 #重试负载均衡其他的实例最大重试次数,不包括首次调用
+  #OkToRetryOnAllOperations: false  #是否所有操作都重试
+logging:
+  level:
+    com.chen.cloud.service.IPaymentService: debug  #debug 级别监控IPaymentService 接口服务
