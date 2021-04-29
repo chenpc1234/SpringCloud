@@ -18,12 +18,12 @@ public class PaymentController {
     private PaymentService paymentService;
 
     @GetMapping("/seeOK/{id}")
-    private CommonResult seeOk(@PathVariable("id") Long id){
+    private CommonResult seeOk(@PathVariable("id") int id){
         String s = paymentService.seeOk(id);
         return new CommonResult(200, "seeOK", s);
     }
     @GetMapping("/seeOK/timeout/{id}")
-    private CommonResult seeOkTimeOut(@PathVariable("id") Long id){
+    private CommonResult seeOkTimeOut(@PathVariable("id") int id){
         String s = paymentService.seeOkTimeOut(id);
         return new CommonResult(200, "seeOKTimeOut", s);
     }
