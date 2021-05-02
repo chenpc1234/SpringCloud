@@ -21,6 +21,13 @@ ribbon:
 logging:
   level:
     com.chen.cloud.service.IPaymentService: debug  #debug 级别监控IPaymentService 接口服务
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
 feign:
   hystrix:
-    enabled: true  # 服务降级第3种方法 打开feign的 hystrix 功能
+    enabled: true

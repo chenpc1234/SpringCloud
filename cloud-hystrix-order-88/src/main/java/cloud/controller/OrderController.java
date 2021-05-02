@@ -55,9 +55,10 @@ public class OrderController {
      * @return 信息
      */
     @GetMapping("/consumer/seeOk/seeOkOut2/{id}")
-    @HystrixCommand(commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "2000")
-    })
+//    @HystrixCommand(commandProperties = {
+//            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "2000")
+//    })
+    @HystrixCommand
     public CommonResult<Payment> seeOkTimeOut2(@PathVariable("id") int id){
         return paymentService.seeOkTimeOut(id);
     }

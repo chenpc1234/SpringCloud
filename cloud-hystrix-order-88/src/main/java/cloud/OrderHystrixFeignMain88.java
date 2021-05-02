@@ -13,8 +13,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  */
 @SpringBootApplication
 @EnableFeignClients
-@EnableHystrix
-//@EnableCircuitBreaker
+@EnableCircuitBreaker
 public class OrderHystrixFeignMain88 {
     public static void main(String[] args) {
         SpringApplication.run(OrderHystrixFeignMain88.class,args);

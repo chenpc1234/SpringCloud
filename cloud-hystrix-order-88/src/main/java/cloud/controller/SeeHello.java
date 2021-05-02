@@ -22,11 +22,7 @@ public class SeeHello {
     private IPaymentService paymentService;
 
     @GetMapping("/consumer/see/{id}")
-    @HystrixCommand(commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds",value = "2000")
-    })
     public CommonResult<Payment> see(@PathVariable("id") int id){
-
         return paymentService.seeOkTimeOut(id);
     }
 
