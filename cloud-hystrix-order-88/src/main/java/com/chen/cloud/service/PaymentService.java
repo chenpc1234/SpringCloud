@@ -1,4 +1,4 @@
-package cloud.service;
+package com.chen.cloud.service;
 
 import com.chen.cloud.entities.CommonResult;
 import org.springframework.stereotype.Component;

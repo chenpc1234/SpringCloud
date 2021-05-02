@@ -1,13 +1,12 @@
-package cloud.controller;
+package com.chen.cloud.controller;
 
-import cloud.service.IPaymentService;
+import com.chen.cloud.service.IPaymentService;
 import com.chen.cloud.entities.CommonResult;
 import com.chen.cloud.entities.Payment;
 import com.netflix.hystrix.contrib.javanica.annotation.DefaultProperties;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;

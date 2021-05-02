@@ -21,6 +21,7 @@ ribbon:
 logging:
   level:
     com.chen.cloud.service.IPaymentService: debug  #debug 级别监控IPaymentService 接口服务
+#hystrix 配置全局时间
 hystrix:
   command:
     default:
@@ -28,6 +29,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 3000
+#开启openfeign的hystrix功能 ，必须在yaml中配置hystrix超时时间
 feign:
   hystrix:
     enabled: true
