@@ -16,6 +16,9 @@
         <module name="cloud-config-Server-3344" />
         <module name="cloud-payment-zk-8004" />
         <module name="cloud-order-80" />
+        <module name="cloud-stream-rabbitmq-receive-8892" />
+        <module name="cloud-stream-rabbitmq-send-8890" />
+        <module name="cloud-stream-rabbitmq-receive-8891" />
         <module name="cloud-order-zk-81" />
         <module name="cloud-payment-8001" />
         <module name="cloud-payment-8002" />
@@ -46,6 +49,9 @@
       <module name="cloud-payment-8002" target="8" />
       <module name="cloud-payment-consul-8006" target="8" />
       <module name="cloud-payment-zk-8004" target="8" />
+      <module name="cloud-stream-rabbitmq-receive-8891" target="8" />
+      <module name="cloud-stream-rabbitmq-receive-8892" target="8" />
+      <module name="cloud-stream-rabbitmq-send-8890" target="8" />
       <module name="SpringCloud" target="8" />
     </bytecodeTargetLevel>
   </component>

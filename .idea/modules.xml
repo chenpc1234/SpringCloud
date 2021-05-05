@@ -21,6 +21,9 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-payment-8002/cloud-payment-8002.iml" filepath="$PROJECT_DIR$/cloud-payment-8002/cloud-payment-8002.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-payment-consul-8006/cloud-payment-consul-8006.iml" filepath="$PROJECT_DIR$/cloud-payment-consul-8006/cloud-payment-consul-8006.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-payment-zk-8004/cloud-payment-zk-8004.iml" filepath="$PROJECT_DIR$/cloud-payment-zk-8004/cloud-payment-zk-8004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-stream-rabbitmq-receive-8891/cloud-stream-rabbitmq-receive-8891.iml" filepath="$PROJECT_DIR$/cloud-stream-rabbitmq-receive-8891/cloud-stream-rabbitmq-receive-8891.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-stream-rabbitmq-receive-8892/cloud-stream-rabbitmq-receive-8892.iml" filepath="$PROJECT_DIR$/cloud-stream-rabbitmq-receive-8892/cloud-stream-rabbitmq-receive-8892.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cloud-stream-rabbitmq-send-8890/cloud-stream-rabbitmq-send-8890.iml" filepath="$PROJECT_DIR$/cloud-stream-rabbitmq-send-8890/cloud-stream-rabbitmq-send-8890.iml" />
     </modules>
   </component>
 </project>

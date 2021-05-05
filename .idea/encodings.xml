@@ -36,6 +36,12 @@
     <file url="file://$PROJECT_DIR$/cloud-payment-consul-8006/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-payment-zk-8004/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-payment-zk-8004/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-receive-8891/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-receive-8891/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-receive-8892/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-receive-8892/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-send-8890/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-stream-rabbitmq-send-8890/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
