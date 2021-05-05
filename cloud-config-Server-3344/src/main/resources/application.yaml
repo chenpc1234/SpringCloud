@@ -1,0 +1,48 @@
+server:
+  port: 3344
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  application:
+    name: cloud-config-server
+  cloud:
+    config:
+      server:
+        git:
+#          uri: git@github.com:chenpc1234/SpringCloudConfig.git
+          uri: https://github.com/chenpc1234/SpringCloudConfig.git    #http模式访问github
+          search-paths:
+            - SpringCloudConfig    # repositories name
+          username: 601059114@qq.com  #登录名
+          password: chen!QAZ2wsx    #密码
+      label: master  #分支
+      #          username: 601059114@qq.com
+#          password: chen!QAZ2wsx
+#          skip-ssl-validation: true
+#          uri: git@github.com:chenpc1234/SpringCloudConfig.git
+#          search-paths:
+#            - SpringCloudConfig
+
+eureka:
+  client:
+    register-with-eureka: true   #注册
+    fetch-registry: true   #是否从eureka server 已有的注册信息
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/  #服务端url
+  instance:
+    instance-id: cloud-config-server-3344
+    prefer-ip-address: true  #显示IP
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'bus-refresh'
+
+
+
+

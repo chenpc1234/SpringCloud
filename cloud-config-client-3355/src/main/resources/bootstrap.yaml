@@ -1,0 +1,35 @@
+server:
+  port: 3355
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  application:
+    name: cloud-config-client
+  cloud:
+    config:
+      #config 客户端配置
+      #配置读取  uri/label/name-profile.yaml  = http://localhost:3344/master/config-dev.yaml
+      label: master
+      name: config
+      profile: dev
+      uri: http://localhost:3344
+eureka:
+  client:
+    register-with-eureka: true   #注册
+    fetch-registry: true   #是否从eureka server 已有的注册信息
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/  #服务端url
+  instance:
+    instance-id: cloud-config-clinet-3355
+    prefer-ip-address: true  #显示IP
+#爆露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+

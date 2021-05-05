@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-payment-consul-8006" />
+        <module name="cloud-order-consul-82" />
+        <module name="cloud-eureka-7002" />
+        <module name="cloud-eureka-7001" />
+        <module name="cloud-hystrix-dashboard-9001" />
+        <module name="cloud-gateway-9527" />
+        <module name="cloud-config-Server-3344" />
+        <module name="cloud-payment-zk-8004" />
+        <module name="cloud-order-80" />
+        <module name="cloud-order-zk-81" />
+        <module name="cloud-payment-8001" />
+        <module name="cloud-payment-8002" />
+        <module name="cloud-hystrix-payment-8100" />
+        <module name="cloud-order-openfeign-83" />
+        <module name="cloud-hystrix-order-88" />
+        <module name="cloud-commons" />
+        <module name="cloud-config-client-3355" />
+        <module name="cloud-config-client-3366" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-commons" target="8" />
+      <module name="cloud-config-client-3355" target="8" />
+      <module name="cloud-config-client-3366" target="8" />
+      <module name="cloud-config-Server-3344" target="8" />
+      <module name="cloud-eureka-7001" target="8" />
+      <module name="cloud-eureka-7002" target="8" />
+      <module name="cloud-gateway-9527" target="8" />
+      <module name="cloud-hystrix-dashboard-9001" target="8" />
+      <module name="cloud-hystrix-order-88" target="8" />
+      <module name="cloud-hystrix-payment-8100" target="8" />
+      <module name="cloud-order-80" target="8" />
+      <module name="cloud-order-consul-82" target="8" />
+      <module name="cloud-order-openfeign-83" target="8" />
+      <module name="cloud-order-zk-81" target="8" />
+      <module name="cloud-payment-8001" target="8" />
+      <module name="cloud-payment-8002" target="8" />
+      <module name="cloud-payment-consul-8006" target="8" />
+      <module name="cloud-payment-zk-8004" target="8" />
+      <module name="SpringCloud" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
