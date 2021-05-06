@@ -1,0 +1,16 @@
+server:
+  port: 6100
+spring:
+  application:
+    name: alibaba-cloud-order
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+service-url:
+  nacos-payment-url: http://alibaba-cloud-payment
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

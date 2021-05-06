@@ -30,6 +30,9 @@
         <module>cloud-stream-rabbitmq-send-8890</module>
         <module>cloud-stream-rabbitmq-receive-8891</module>
         <module>cloud-stream-rabbitmq-receive-8892</module>
+        <module>cloud-alibaba-payment-6001</module>
+        <module>cloud-alibaba-payment-6002</module>
+        <module>cloud-alibaba-order-6100</module>
     </modules>
     <packaging>pom</packaging>
     <!--统一管理jar包版本-->

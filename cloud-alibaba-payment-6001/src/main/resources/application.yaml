@@ -1,0 +1,14 @@
+server:
+  port: 6001
+spring:
+  application:
+    name: alibaba-cloud-payment
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
