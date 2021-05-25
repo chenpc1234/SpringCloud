@@ -7,9 +7,12 @@ spring:
     nacos:
       discovery:
         server-addr: localhost:8848
+        namespace: 455ca0c8-989e-4eb7-99c8-47cd108fc478
       config:
         server-addr: localhost:8848
         file-extension: yaml
+        namespace: 455ca0c8-989e-4eb7-99c8-47cd108fc478
+        group:  test
 management:
   endpoints:
     web:
