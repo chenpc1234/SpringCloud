@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController {
     @Autowired
     private OrderServiceImpl orderService;
+
     @GetMapping("/create/order")
     public CommonResult<Order> create(Order order){
         orderService.createOrder(order);

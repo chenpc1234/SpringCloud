@@ -9,14 +9,14 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * @author chenpc
  * @version 1.0
- * @since 2021/5/8/05/08  15:23
+ * @since 2021/6/8/06/08  16:42
  */
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients
 @MapperScan("com.chen.cloud.alibaba.dao")
-public class SeataOrder2001Main {
+public class SeataStorageMain2002 {
     public static void main(String[] args) {
-        SpringApplication.run(SeataOrder2001Main.class, args);
+        SpringApplication.run(SeataStorageMain2002.class, args);
     }
 }

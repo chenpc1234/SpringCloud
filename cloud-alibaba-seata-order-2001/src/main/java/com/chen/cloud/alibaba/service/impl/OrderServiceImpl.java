@@ -5,6 +5,7 @@ import com.chen.cloud.alibaba.dao.OrderDao;
 import com.chen.cloud.alibaba.service.IAccountService;
 import com.chen.cloud.alibaba.service.IOrderService;
 import com.chen.cloud.alibaba.service.IStorageService;
+import io.seata.spring.annotation.GlobalTransactional;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -24,8 +25,11 @@ public class OrderServiceImpl implements IOrderService {
     @Autowired
     private IStorageService storageService;
 
+    @Override
+    @GlobalTransactional(name="test",rollbackFor = Exception.class)
     public void createOrder(Order order){
         log.info("No1--->开始创建订单 初始状态未付款");
+        order.setStatus(0);
         orderDao.insert(order);
         log.info("No2--->开始减少库存");
         storageService.decrease(order.getProductId(), order.getCount());

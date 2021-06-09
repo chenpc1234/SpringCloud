@@ -3,6 +3,7 @@ package com.chen.cloud.alibaba.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.chen.cloud.alibaba.bean.Order;
 import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
 
 /**
  * @author chenpc
@@ -16,5 +17,5 @@ public interface OrderDao extends BaseMapper<Order> {
      * @param userId 用户名
      * @param status 订单状态
      */
-    void updateByUserIdStatus(Long userId,Integer status);
+    void updateByUserIdStatus(@Param("userId") Long userId, @Param("status") Integer status);
 }
