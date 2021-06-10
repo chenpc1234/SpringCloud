@@ -4,13 +4,11 @@ spring:
   application:
     name: cloud-alibaba-seata-account
   cloud:
-    alibaba:
-     seata:
-       #与server配置文件中的一致
-       tx-service-group: fsp_tx_group
     nacos:
       discovery:
         server-addr: localhost:8848
+        namespace: 2d454675-4afe-4d33-a3e6-6f68f27d375d
+        group: SEATA_GROUP
 #      config:
 #        server-addr: localhost:8848
 #        file-extension: yaml
@@ -27,3 +25,30 @@ spring:
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true  #默认就是true 开启驼峰命名
+seata:
+  enabled: true
+  enable-auto-data-source-proxy: true
+  tx-service-group: my_test_tx_group
+  registry:
+    type: nacos
+    nacos:
+      application: seata-server
+      server-addr: 127.0.0.1:8848
+      username: nacos
+      password: nacos
+      namespace: 2d454675-4afe-4d33-a3e6-6f68f27d375d
+  config:
+    type: nacos
+    nacos:
+      server-addr: 127.0.0.1:8848
+      group: SEATA_GROUP
+      username: nacos
+      password: nacos
+      namespace: 2d454675-4afe-4d33-a3e6-6f68f27d375d
+  service:
+    vgroup-mapping:
+      my_test_tx_group: default
+    disable-global-transaction: false
+  client:
+    rm:
+      report-success-enable: false

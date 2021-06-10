@@ -17,7 +17,7 @@ public class AccountServiceImpl implements IAccountService {
     @Autowired
     private AccountDao accountDao;
     @Override
-    public void decrease(Long userId, BigDecimal money) {
+    public void decrease(Long userId, Long money) {
         accountDao.decrease( userId,  money);
     }
 }

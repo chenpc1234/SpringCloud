@@ -2,12 +2,9 @@ package com.chen.cloud.alibaba.service;
 
 import com.chen.cloud.alibaba.bean.CommonResult;
 import com.chen.cloud.alibaba.service.impl.AccountServiceImpl;
-import com.chen.cloud.alibaba.service.impl.StorageServiceImpl;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-
-import java.math.BigDecimal;
 
 /**
  * @author chenpc
@@ -24,5 +21,5 @@ public interface IAccountService {
      */
     @PostMapping("/account/decrease")
     CommonResult decrease(@RequestParam(value = "userId") Long userId,
-                          @RequestParam(value = "money") BigDecimal money);
+                          @RequestParam(value = "money") Long money);
 }

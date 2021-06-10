@@ -5,8 +5,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
-
 /**
  * @author chenpc
  * @version 1.0
@@ -21,6 +19,6 @@ public class Order {
     private Long userId;
     private Long productId;
     private Integer count;
-    private BigDecimal money;
+    private Long money;
     private Integer status;
 }

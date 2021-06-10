@@ -7,9 +7,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.math.BigDecimal;
-import java.util.concurrent.TimeUnit;
-
 /**
  * @author chenpc
  * @version 1.0
@@ -22,12 +19,12 @@ public class AccountController {
     private IAccountService accountService;
     @PostMapping("/account/decrease")
     CommonResult decrease(@RequestParam(value = "userId") Long userId,
-                          @RequestParam(value = "money") BigDecimal money){
-        try {
-            TimeUnit.SECONDS.sleep(5);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+                          @RequestParam(value = "money") Long money){
+//        try {
+//            TimeUnit.SECONDS.sleep(5);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
         accountService.decrease(userId,money);
         return new CommonResult<>(200, "成功");
     }
